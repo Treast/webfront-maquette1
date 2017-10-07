@@ -31,10 +31,27 @@ section {
 	flex: 1;
 }
 
+.btn {
+	transition: border 0.2s ease-in-out, margin 0.2s ease-in-out;
+}
+
 .btn:hover {
 	border-bottom-width: 3px;
 	border-right-width: 3px;
 	margin-bottom: -2px;
+
+	.caret-right {
+		transform: rotate3d(0, 0, 1, 180deg - 45deg);
+	}
+	.caret-left {
+		transform: rotate3d(0, 0, 1, 180deg + 135deg);
+	}
+	.caret-up {
+		transform: rotate3d(0, 0, 1, 180deg - 135deg);
+	}
+	.caret-down {
+		transform: rotate3d(0, 0, 1, 180deg + 45deg);
+	}
 }
 
 .container {
@@ -58,26 +75,27 @@ section {
 	border-width: 0 2px 2px 0;
 	display: inline-block;
 	padding: 2px;
+	transition: transform 0.2s ease-in-out;
 }
 
 .caret-right {
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
+	transform: rotate3d(0, 0, 1, -45deg);
+	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 }
 
 .caret-left {
-	transform: rotate(135deg);
-	-webkit-transform: rotate(135deg);
+	transform: rotate3d(0, 0, 1, 135deg);
+	-webkit-transform: rotate3d(0, 0, 1, 135deg);
 }
 
 .caret-up {
-	transform: rotate(-135deg);
-	-webkit-transform: rotate(-135deg);
+	transform: rotate3d(0, 0, 1, -135deg);
+	-webkit-transform: rotate3d(0, 0, 1, -135deg);
 }
 
 .caret-down {
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
 }
 
 @media screen and (max-width: 924px) {

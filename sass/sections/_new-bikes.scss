@@ -1,7 +1,7 @@
 .new-bikes {
   position: relative;
   margin-top: 80px;
-  background-color: $new-bikes_background;
+  background-color: $new-bikes__background;
   //transform: rotate3d(0, 0, 1, -2deg);
   &:before {
     position: absolute;
@@ -21,7 +21,7 @@
 
 .new-bikes__title {
   text-align: center;
-  font-size: 14px;
+  font-size: $new-bikes__title;
   font-weight: 700;
   color: #212121;
   margin-top: 28px;
@@ -52,8 +52,8 @@
 }
 
 .bike__image img {
-  width: 350px;
-  height: 180px;
+  width: $bike__image__width;
+  height: $bike__image__height;
   padding-left: 7px;
 }
 
@@ -63,13 +63,13 @@
 }
 
 .bike__title {
-  font-size: 18px;
+  font-size: $bike__title;
   font-weight: 400;
   margin-top: 36px;
 }
 
 .bike__text {
-  font-size: 14px;
+  font-size: $bike__text;
   padding: 6px 20px 0 0;
 }
 
@@ -80,7 +80,7 @@
   padding: 8px 11px 7px 9px;
   color: #000000;
   border: 1px solid  #000000;
-  font-size: 14px;
+  font-size: $bike__btn;
 }
 
 .bike__caret {
@@ -126,17 +126,17 @@
 }
 
 .preview__image {
-  height: 38px;
-  width: 38px;
+  height: $preview__height;
+  width: $preview__width;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid $preview__border-color;
   transition: height 0.3s ease-out, width 0.3s ease-out, border-color 0.3s ease-out;
 }
 
 .preview__image--active {
-  height: 48px;
-  width: 48px;
-  border-color: #000000;
+  height: $preview__height--active;
+  width: $preview__width--active;
+  border-color: $preview__border-color--active;
 }
 
 .preview__ul {

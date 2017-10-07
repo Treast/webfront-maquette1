@@ -3,7 +3,7 @@ header {
 	color: $header__primary-color;
 	flex: 1;
 
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid $header__border-color;
 }
 
 .header__container {
@@ -81,10 +81,10 @@ header {
 
 .link__divider {
 	display: inline-block;
-	height: 11px;
-	width: 11px;
-	background-color: #0cff56;
-	color: #1f522a;
+	height: $header__link__divider;
+	width: $header__link__divider;
+	background-color: $header__link__divider__background-color;
+	color: $header__link__divider__color;
 	border-radius: 50%;
 	line-height: 100%;
 	margin-left: 6px;

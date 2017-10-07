@@ -16,15 +16,15 @@
   display: block;
   padding-top: 48px;
   margin: 0;
-  color: #ffffff;
+  color: $new-product__color;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $new-product__title;
 
 }
 
 .new-product__description, .new-product__color {
-  color: #ffffff;
-  font-size: 11px;
+  color: $new-product__color;
+  font-size: $new-product__description;
   margin: 0;
 }
 
@@ -41,9 +41,9 @@
   margin-top: 215px;
   border-radius: 2px;
   padding: 8px 11px 7px 9px;
-  color: #ffffff;
-  border: 1px solid  #ffffff;
-  font-size: 14px;
+  color: $new-product__btn__color;
+  border: 1px solid  $new-product__btn__color;
+  font-size: $new-product__btn;
 }
 
 .new-product__caret {

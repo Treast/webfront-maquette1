@@ -5,6 +5,9 @@
   "license": "MIT",
   "dependencies": {
   },
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",

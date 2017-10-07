@@ -2,24 +2,95 @@
 $header__background: #170cff;
 $header__primary-color: #ffffff;
 $header__link-color: #ffffff;
+$header__border-color: #ffffff;
+$header__link__divider: 11px;
+$header__link__divider__background-color: #0cff56;
+$header__link__divider__color: #1f522a;
 
 // NEW PRODUCT
 $new-product__background: #170cff;
+$new-product__title: 14px;
+$new-product__color: #ffffff;
+$new-product__description: 11px;
+$new-product__btn: 14px;
+$new-product__btn__color: #ffffff;
 
 // BESTSELLERS
 $bestsellers_background: #ffffff;
+$bestsellers__title: 24px;
+$bestsellers__form: 14px;
+$bestsellers__box-shadow: #d9d9d9;
+$bestsellers-list__li: 180px;
+$bestseller__background: #efefef;
+$bestseller__image__background: #e6e6e6;
+$bestseller__title: 16px;
+$bestseller__description: 11px;
+$bestseller__description__color: #555555;
+$bestseller-footer__color: #c6c6c6;
+$bestseller-footer__background-color: #d6d6d6;
+$bestseller--danger: #ff3f0c;
 
 // NEW BIKES
-$new-bikes_background: #0cff56;
+$new-bikes__background: #0cff56;
+$new-bikes__title: 14px;
+// Bikes
+$bike__image__width: 350px;
+$bike__image__height: 180px;
+$bike__title: 18px;
+$bike__text: 14px;
+$bike__btn: 14px;
+// Previews
+$preview__width: 38px;
+$preview__height: 38px;
+$preview__border-color: #ffffff;
+$preview__width--active: 48px;
+$preview__height--active: 48px;
+$preview__border-color--active: #000000;
 
 // USER PROFILE
-$user-profile_background: #ffffff;
+$user-profile__background: #ffffff;
+$user-profile__color: #555555;
+$user-profile__color--danger: #ff3f0c;
+$user-profile__color--success: #0cff56;
+$user-profile__title: 18px;
+$order-description__title: 14px;
+$order-images__profile: 48px;
+$order-images__profile__border-color: #bcbdbf;
+$order-images__profile__border-color--danger: #ff6a42;
+$order-description__text: 11px;
+$order-description__action: 10px;
+$order-description__btn: 14px;
+$order-description__btn__color: #555555;
+$formation__title: 18px;
+$formation__image: 48px;
+$formation__image__border-color: #babcb2;
+$formation-description__color: #555555;
+$formation-description__category: 11px;
+$formation-description__title: 14px;
+$formation-description__recommended: 10px;
+$formation-description__recommended__color: #a6a6a6;
+$user-profile__btn__color: #555555;
+$user-profile__btn__border-color: #d6d6d6;
+$user-profile__btn__background-color: #ffffff;
 
 // CHART
-$chart_background: #ff3f0c;
+$chart__background: #ff3f0c;
+$chart__color: #ffffff;
+$chart__title: 14px;
+$chart__form: 14px;
+$chart__form__color: #ffffff;
+$chart__box-shadow: #d9360a;
+$chart__arrow__height: 20px;
+$chart__arrow__width: 20px;
 
 // ALL BIKES
 $all-bikes_background: #ffffff;
+$all-bikes__btn: 14px;
+$all-bikes__btn__background: #ffffff;
+$all-bikes__btn__color: #555555;
+$all-bikes__btn__border-color: #d6d6d6;
 
 // FOOTER
-$footer_background: #170cff;
+$footer__background: #170cff;
+$footer__color: #ffffff;
+$footer-list__title: 14px;

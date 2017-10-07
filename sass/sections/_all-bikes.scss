@@ -27,13 +27,13 @@
   margin-left: -2px;
   border-radius: 2px;
   padding: 8px 11px 7px 8px;
-  color: #555555;
-  border: 1px solid #d6d6d6;
-  font-size: 14px;
-  background-color: #ffffff;
+  color: $all-bikes__btn__color;
+  border: 1px solid $all-bikes__btn__border-color;
+  font-size: $all-bikes__btn;
+  background-color: $all-bikes__btn__background;
 }
 
 .all-bikes__caret {
-  border-color: #555555;
+  border-color: $all-bikes__btn__color;
   margin: 0 6px 3px 3px;
 }

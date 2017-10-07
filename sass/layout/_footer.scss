@@ -1,12 +1,12 @@
 footer {
-  background-color: $footer_background;
-  color: #ffffff;
+  background-color: $footer__background;
+  color: $footer__color;
   margin-top: 100px;
 }
 
 footer a {
   opacity: 0.6;
-  color: #ffffff;
+  color: $footer__color;
   transition: opacity 0.4s ease-in-out;
 
   &:hover {
@@ -24,13 +24,13 @@ footer a {
 }
 
 .footer-list__title {
-  font-size: 14px;
+  font-size: $footer-list__title;
   font-weight: 700;
   margin-top: 48px;
 }
 
 .footer__nav {
-  font-size: 14px;
+  font-size: $footer-list__title;
   margin-top: 32px;
 }
 
