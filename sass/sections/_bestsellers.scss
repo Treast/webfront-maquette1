@@ -1,0 +1,131 @@
+.bestsellers__header {
+  display: flex;
+  margin-top: 45px;
+}
+
+.bestsellers__title {
+  flex: 1;
+  font-size: 24px;
+  margin: 0 0 0 -1px;
+}
+
+.bestsellers__form {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+  margin-top: -2px;
+}
+
+.bestsellers__label {
+  padding-right: 5px;
+}
+
+.bestsellers__select {
+  background: url(../img/arrows.png) no-repeat;
+  padding: 6px 32px 8px 8px;
+  background-position: 96px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  width: 115px;
+  box-shadow: 1px 1px 5px 0px #d9d9d9;
+}
+
+.bestsellers-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0 !important;
+  margin-top: 42px;
+}
+
+.bestsellers-list__li {
+  width: 180px;
+  flex: 1;
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.bestseller {
+  background-color: #efefef;
+}
+
+.bestseller__image {
+  height: 105px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.bestseller__image img {
+  position: absolute;
+  bottom: 6px;
+  transform: translate3d(13%, 0, 0);
+}
+
+.bestseller__title {
+  padding: 2px 22px 2px 15px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  line-height: 19px;
+}
+
+.bestseller__description {
+  font-size: 11px;
+  color: #555555;
+  margin: 5px 16px 4px 16px;
+}
+
+.bestseller-footer {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.bestseller-footer__stock {
+  font-size: 11px;
+  font-weight: 700;
+  color: #c6c6c6;
+  margin: 0 9px 4px 0;
+}
+
+.bestseller-footer__bar {
+  display: block;
+  height: 4px;
+  background-color: #d6d6d6;
+}
+
+.bestseller--danger .bestseller-footer__bar {
+  background-color: #ff3f0c;
+}
+
+.bestseller--danger .bestseller-footer__stock {
+  color: #ff3f0c;
+}
+
+@media screen and (max-width: 768px) {
+  .bestsellers__header {
+    padding: 0 20px;
+  }
+
+  .bestsellers-list {
+    flex-direction: column;
+  }
+
+  .bestsellers-list__li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .bestseller__image img {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

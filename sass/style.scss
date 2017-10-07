@@ -1,0 +1,13 @@
+@import "normalize";
+@import "variables";
+
+@import "base";
+
+@import "layout/header.scss";
+@import "sections/new-product.scss";
+@import "sections/bestsellers.scss";
+@import "sections/new-bikes.scss";
+@import "sections/user-profile.scss";
+@import "sections/charts.scss";
+@import "sections/all-bikes.scss";
+@import "layout/footer.scss";

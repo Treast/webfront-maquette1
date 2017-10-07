@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquette 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+<header>
+    <div class="container header__container">
+        <nav>
+            <ul class="nav-primary">
+                <li class="nav-primary__li"><a href="#" class="nav-primary__link nav-primary__link--active">Accueil</a>
+                </li>
+                <li class="nav-primary__li"><a href="#" class="nav-primary__link">En cours</a></li>
+                <li class="nav-primary__li"><a href="#" class="nav-primary__link">Historique</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav-secondary">
+                <li class="nav-secondary__li"><a href="#" class="nav-secondary__link">Sophia Lopez <span
+                        class="link__divider">+</span></a></li>
+                <li class="nav-secondary__li"><a href="#" class="nav-secondary__link">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="new-product">
+        <div class="container">
+            <article class="new-product__article">
+                <h1 class="new-product__title">Nom du modèle</h1>
+                <p class="new-product__description">Taille S - Automatique</p>
+                <p class="new-product__color">Vert Anglais</p>
+                <a href="#" class="btn new-product__button">commander <span class="caret caret-right new-product__caret"></span></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bestsellers">
+        <div class="container">
+            <div class="bestsellers__header">
+                <p class="bestsellers__title">Best-seller</p>
+                <form action="#" class="bestsellers__form">
+                    <label for="sortby" class="bestsellers__label">trier par :</label>
+                    <select name="sortby" id="sortby" class="bestsellers__select">
+                        <option value="stock">stock</option>
+                        <option value="price">prix</option>
+                        <option value="name">nom</option>
+                    </select>
+                </form>
+            </div>
+            <ul class="bestsellers-list"></ul>
+        </div>
+    </section>
+
+    <section class="new-bikes">
+        <div class="container new-bikes__container">
+            <p class="new-bikes__title">Nouveautés</p>
+            <div class="new-bikes__flex">
+                <div class="new-bikes__arrows new-bikes__arrows--previous">
+                    <div class="new-bikes__arrow new-bikes__arrow--previous"></div>
+                </div>
+                <ul class="new-bikes__ul"></ul>
+                <div class="new-bikes__arrows new-bikes__arrows--next">
+                    <div class="new-bikes__arrow new-bikes__arrow--next"></div>
+                </div>
+            </div>
+            <div class="new-bikes__preview">
+                <ul class="preview__ul"></ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="user-profile">
+        <div class="container user-profile__container">
+            <div class="user-profile__history">
+                <p class="user-profile__title">Historique de vos commandes</p>
+                <ul class="user-profile__orders">
+                    <li class="user-profile__order user-profile__order--danger">
+                        <a href="#" class="order__link">
+                            <div class="order-images">
+                                <div class="order-images__profile order-images__profile--user1"></div>
+                                <img src="./img/order-fail.png"
+                                     class="order-images__status"
+                                     alt="Problème avec la commande">
+                            </div>
+                            <div class="order-description">
+                                <h1 class="order-description__title">Commande N°365412</h1>
+                                <p class="order-description__text">Par <span
+                                        class="order-description__username">Vous</span> le
+                                    <time class="order-description__time" datetime="2015-02-05T16:45">05 février 2015
+                                    </time>
+                                </p>
+                                <span class="order-description__action">attention requise</span>
+                            </div>
+                            <div class="order__action">
+                                <div class="btn order__btn">consulter <span class="caret caret-right order____caret"></span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-profile__order">
+                        <a href="#" class="order__link">
+                            <div class="order-images">
+                                <div class="order-images__profile order-images__profile--user2"></div>
+                                <img src="./img/order-deliver.png"
+                                     class="order-images__status"
+                                     alt="Expédition en cours">
+                            </div>
+                            <div class="order-description">
+                                <h1 class="order-description__title">Commande N°365348</h1>
+                                <p class="order-description__text">Par <span class="order-description__username">Pierre Amiro</span>
+                                    le
+                                    <time class="order-description__time" datetime="2015-01-22T13:15">22 janvier 2015
+                                    </time>
+                                </p>
+                                <span class="order-description__action">en cours d'expédition</span>
+                            </div>
+                            <div class="order__action">
+                                <div class="btn order__btn">consulter <span class="caret caret-right order____caret"></span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-profile__order user-profile__order--success">
+                        <a href="#" class="order__link">
+                            <div class="order-images">
+                                <div class="order-images__profile order-images__profile--user1"></div>
+                                <img src="./img/order-success.png"
+                                     class="order-images__status"
+                                     alt="Commande réceptionnée">
+                            </div>
+                            <div class="order-description">
+                                <h1 class="order-description__title">Commande N°359836</h1>
+                                <p class="order-description__text">Par <span
+                                        class="order-description__username">Vous</span> le
+                                    <time class="order-description__time" datetime="2015-01-06T11:47">06 janvier 2015
+                                    </time>
+                                </p>
+                                <span class="order-description__action">receptionnée</span>
+                            </div>
+                            <div class="order__action">
+                                <div class="btn order__btn">consulter <span class="caret caret-right order____caret"></span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-profile__order user-profile__order--success">
+                        <a href="#" class="order__link">
+                            <div class="order-images">
+                                <div class="order-images__profile order-images__profile--user2"></div>
+                                <img src="./img/order-success.png"
+                                     class="order-images__status"
+                                     alt="Commande réceptionnée">
+                            </div>
+                            <div class="order-description">
+                                <h1 class="order-description__title">Commande N°359836</h1>
+                                <p class="order-description__text">Par <span class="order-description__username">Pierre Amiro</span>
+                                    le
+                                    <time class="order-description__time" datetime="2014-12-22T18:16">22 décembre 2014
+                                    </time>
+                                </p>
+                                <span class="order-description__action">receptionnée</span>
+                            </div>
+                            <div class="order__action">
+                                <div class="btn order__btn">consulter <span class="caret caret-right order____caret"></span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legend">
+                    <a href="#" class="btn--legend">voir l'historique <span class="caret caret-right legend__caret"></span></a>
+                    <div class="legend__hr"></div>
+                </div>
+            </div>
+            <div class="user-profile__formations">
+                <p class="formation__title">Formations liées</p>
+                <ul class="formation__ul">
+                    <li class="formation">
+                        <a href="#" class="formation__link">
+                            <div class="formation__image"></div>
+                            <div class="formation-description">
+                                <span class="formation-description__category">force de vente</span>
+                                <h1>Optimiser vos campagnes publicitaires</h1>
+                                <span class="formation-description__recommended">recommandée</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="formation">
+                        <a href="#" class="formation__link">
+                            <div class="formation__image"></div>
+                            <div class="formation-description">
+                                <span class="formation-description__category">force de vente</span>
+                                <h1>Gestion des stocks</h1>
+                                <span class="formation-description__recommended">recommandée</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="charts">
+        <div class="container">
+            <div class="charts__header">
+                <p class="charts__title">Ventes / Commandes</p>
+                <form action="#" class="charts__form">
+                    <label for="modele" class="charts__label">modèle :</label>
+                    <select name="modele" id="modele" class="charts__select">
+                        <option value="name">Nom du modèle</option>
+                        <option value="price">Prix</option>
+                    </select>
+                    <label for="color" class="charts__label charts__label--color">couleur :</label>
+                    <select name="color" id="color" class="charts__select">
+                        <option value="black">Noir</option>
+                        <option value="white">Blanc</option>
+                    </select>
+                </form>
+            </div>
+            <div class="charts__chart">
+                <div class="charts__arrow-previous"></div>
+                <img src="./img/charts.png" alt="Graphique des ventes, commandes et stocks sur les derniers mois" class="chart__chart">
+            </div>
+        </div>
+    </section>
+
+    <section class="all-bikes">
+        <div class="container">
+            <div class="bestsellers__header">
+                <p class="bestsellers__title">Tous les modèles</p>
+                <form action="#" class="bestsellers__form bestsellers__form--all">
+                    <input type="text" name="search-bike" placeholder="Rechercher un modèle" class="bestseller__search">
+                    <label for="sortby2" class="bestsellers__label">trier par :</label>
+                    <select name="sortby" id="sortby2" class="bestsellers__select">
+                        <option value="popularity">popularité</option>
+                        <option value="price">prix</option>
+                        <option value="name">nom</option>
+                    </select>
+                </form>
+            </div>
+            <ul class="bestsellers-list"></ul>
+            <div class="all-bikes__legend">
+                <a href="#" class="all-bikes__legend--btn btn--legend"><span class="caret caret-down all-bikes__caret"></span> voir tous les modèles</a>
+                <div class="legend__hr"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container--footer">
+            <div class="footer-list">
+                <p class="footer-list__title">Navigation</p>
+                <nav class="footer__nav">
+                    <ul>
+                        <li class="footer__li"><a href="#">actualités</a></li>
+                        <li class="footer__li"><a href="#">annuaire</a></li>
+                        <li class="footer__li"><a href="#">app store</a></li>
+                        <li class="footer__li"><a href="#">commandes</a></li>
+                        <li class="footer__li"><a href="#">formations</a></li>
+                        <li class="footer__li"><a href="#">publicités</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-list">
+                <p class="footer-list__title">Mon compte</p>
+                <nav class="footer__nav">
+                    <ul>
+                        <li class="footer__li"><a href="#">contacts favoris</a></li>
+                        <li class="footer__li"><a href="#">commandes</a></li>
+                        <li class="footer__li"><a href="#">formations</a></li>
+                        <li class="footer__li"><a href="#">préférences</a></li>
+                        <li class="footer__li"><a href="#">profil</a></li>
+                        <li class="footer__li"><a href="#">publicités</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-list">
+                <p class="footer-list__title">Applications</p>
+                <nav class="footer__nav">
+                    <ul>
+                        <li class="footer__li"><a href="#">Catalogue</a></li>
+                        <li class="footer__li"><a href="#">App SAV</a></li>
+                        <li class="footer__li"><a href="#">App Garantie</a></li>
+                        <li class="footer__li"><a href="#">User Management</a></li>
+                        <li class="footer__li"><a href="#">CRM</a></li>
+                        <li class="footer__li"><a href="#">ERP</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-list">
+                <p class="footer-list__title">Liens</p>
+                <nav class="footer__nav">
+                    <ul>
+                        <li class="footer__li"><a href="#">à propos</a></li>
+                        <li class="footer__li"><a href="#">conditions d'utilisation</a></li>
+                        <li class="footer__li"><a href="#">mentions légales</a></li>
+                        <li class="footer__li"><a href="#">intranet</a></li>
+                        <li class="footer__li"><a href="#">site.com</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="./dist/app.js"></script>
+</body>
+</html>

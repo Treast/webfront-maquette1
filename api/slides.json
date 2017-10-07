@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Nom du nouveau modèle",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "url": "http://www.google.fr",
+    "image": "./img/preview_1.png"
+  },
+  {
+    "id": 2,
+    "title": "Nom du nouveau modèle 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "url": "http://www.bing.fr",
+    "image": "./img/preview_2.png"
+  },
+  {
+    "id": 3,
+    "title": "Nom du nouveau modèle 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "url": "http://www.yahoo.fr",
+    "image": "./img/preview_3.png"
+  }
+]

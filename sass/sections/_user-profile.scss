@@ -1,0 +1,272 @@
+.user-profile {
+  color: #555555;
+}
+
+.user-profile__container {
+  display: flex;
+}
+
+.user-profile__history, .user-profile__formations {
+  flex: 1;
+}
+
+.user-profile__formations {
+  margin-left: -26px;
+}
+
+.user-profile__history {
+  padding-right: 25px;
+}
+
+.order__link {
+  display: flex;
+  color: #555555;
+  align-items: center;
+  padding-top: 13px;
+}
+
+.user-profile__title {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.user-profile__orders {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: -7px;
+  padding-right: 25px;
+}
+
+.user-profile__order {
+  flex: 1;
+  height: 100px;
+  border-bottom: 1px solid #d6d6d6;
+  &:last-child {
+    border-bottom: none;
+  }
+  cursor: pointer;
+  &:hover .order__btn {
+    opacity: 1;
+  }
+}
+
+.order-description__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.order-images {
+  flex: 0 0 107px;
+  margin-top: 9px;
+}
+
+.order-description {
+  flex: 2;
+}
+
+.order-images__profile {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid #bcbdbf;
+}
+
+.order-images__profile--danger {
+  border: 1px solid #ff6a42;
+}
+
+.order-images__profile--user1 {
+  background: url('../img/user1.png');
+  background-position: -9px -6px;
+}
+
+.order-images__profile--user2 {
+  background: url('../img/user2.png');
+  background-position: -5px 0;
+}
+
+.order-images__status {
+  display: inline-block;
+  margin-left: -15px;
+}
+.order-description__text {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 2px 0px 8px;
+}
+
+.order-description__username {
+  font-weight: 700;
+}
+
+.order-description__time {
+  font-weight: 700;
+}
+
+.order-description__action {
+  font-size: 10px;
+  font-weight: 700;
+  padding-left: 1px;
+}
+
+.order__btn {
+  display: inline-block;
+  margin-top: 11px;
+  border-radius: 2px;
+  padding: 6px 11px 8px 10px;
+  color: #555555;
+  border: 1px solid #555555;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.order____caret {
+  border-color: #555555;
+  margin-left: 12px;
+}
+
+.user-profile__order--danger {
+  .order-images__profile {
+    border-color: #ff3f0c !important;
+  }
+
+  .order__btn {
+    border-color: #ff3f0c !important;
+  }
+
+  .order-description__action {
+    color: #ff3f0c !important;
+  }
+  .order____caret {
+    border-color: #ff3f0c !important;
+  }
+}
+
+.user-profile__order--success {
+  .order-images__profile {
+    border-color: #0cff56 !important;
+  }
+
+  .order__btn {
+    border-color: #0cff56 !important;
+  }
+
+  .order-description__action {
+    color: #0cff56 !important;
+  }
+  .order____caret {
+    border-color: #0cff56 !important;
+  }
+}
+
+.formation__title {
+  font-size: 18px;
+  margin: 50px 0px 22px 23px;
+}
+
+.formation__image {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #babcb2;
+  border-radius: 50%;
+  margin-top: 24px;
+  background: url('../img/formation.png');
+  background-size: cover;
+  background-position: -24px -2px;
+}
+
+.formation {
+  height: 100px;
+  border-bottom: 1px solid #d6d6d6;
+  &:last-child {
+    border-bottom: none;
+  }
+  cursor: pointer;
+}
+
+.formation-description {
+  margin-top: 18px;
+  margin-left: 18px;
+  color: #555555;
+}
+
+.formation-description__category {
+  font-size: 11px;
+}
+
+.formation-description h1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.formation-description__recommended {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a6a6a6;
+}
+
+.formation__link {
+  display: flex;
+}
+
+.formation__image {
+  flex: 0 0 50px;
+}
+
+.formation-description {
+  flex: 1;
+}
+
+.btn--legend {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 2px;
+  border-radius: 2px;
+  padding: 8px 11px 7px 8px;
+  color: #555555;
+  border: 1px solid #d6d6d6;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.legend {
+  display: block;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.legend__caret {
+  border-color: #555555;
+  margin: 0 0 3px 4px;
+}
+
+.legend__hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d6d6d6;
+  z-index: -1;
+  margin-top: -16px;
+}
+
+.formation__ul {
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-profile__container {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .order__action {
+    display: none;
+  }
+}

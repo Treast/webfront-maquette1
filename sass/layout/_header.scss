@@ -1,0 +1,133 @@
+header {
+	background-color: $header__background;
+	color: $header__primary-color;
+	flex: 1;
+
+	border-bottom: 1px solid #ffffff;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-primary, .nav-secondary {
+	list-style: none;
+	height: 100px;
+	flex: 1;
+	padding-left: 0;
+	margin: 0;
+}
+
+.nav-primary__li, .nav-secondary__li {
+	display: inline-block;
+	height: 100%;
+}
+
+.nav-primary__link {
+	@extend .nav--link;
+	color: $header__link-color;
+	opacity: 0.6;
+
+	&.nav-primary__link--active {
+		opacity: 1;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: #ffffff;
+		opacity: 1;
+		margin-top: -3px;
+		transition: transform 0.4s ease-in-out;
+	}
+	transition: opacity 0.4s ease-in-out;
+}
+
+.nav-primary__link:hover {
+	opacity: 1;
+}
+
+.nav-primary__link:hover::after, .nav-primary__link--active:after {
+	transform: scale3d(1, 5, 1) translate3d(0, -50%, 0);
+}
+
+.nav-primary__li:first-child > .nav-primary__link {
+	padding-left: 0;
+}
+.nav-secondary__li:last-child > .nav-secondary__link {
+	padding-right: 0;
+}
+
+.nav-secondary__link {
+	@extend .nav--link;
+	color: $header__link-color;
+	position: relative;
+}
+
+.nav-secondary__li:first-child > .nav-secondary__link:after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 15px;
+	width: 1px;
+	top: 50%;
+	right: 0;
+	transform: translate3d(0, -50%, 0);
+	background-color: #555555;
+}
+
+.link__divider {
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+	background-color: #0cff56;
+	color: #1f522a;
+	border-radius: 50%;
+	line-height: 100%;
+	margin-left: 6px;
+	margin-right: 9px;
+	text-align: center;
+	line-height: 11px;
+}
+
+@media screen and (max-width: 768px) {
+	.header__container {
+		display: block;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.nav-primary, .nav-secondary {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	.nav-primary__li, .nav-secondary__li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-primary__link, .nav-secondary__link {
+		display: block;
+		padding: 0;
+
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: #ffffff;
+			opacity: 1;
+			margin-top: -3px;
+			transition: transform 0.4s ease-in-out;
+		}
+	}
+
+}
