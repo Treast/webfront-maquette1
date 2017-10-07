@@ -183,6 +183,8 @@
 
   .new-bikes__bike--hidden {
     display: block !important;
+    position: static;
+    transform: none;
   }
 
   .bike__image {

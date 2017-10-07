@@ -1,7 +1,6 @@
 import Slider from './slider/slider';
 import Sort from './sort/sort';
 
-
 var slider = new Slider(document.querySelector('.new-bikes__container'));
 slider.loadContent();
 

@@ -2,7 +2,7 @@ export default class SliderTemplate {
     static render(data) {
         let html = `
             <li>
-                <article class="new-bikes__bike ${data.index == 0 ? null : "new-bikes__bike--hidden"}">
+                <article class="new-bikes__bike${data.index == 0 ? '' : " new-bikes__bike--hidden"}">
                     <div class="bike__image bike__image--preview${data.index + 1}">
                         <img src="${data.image}" alt="Image d'une selle de vélo">
                     </div>

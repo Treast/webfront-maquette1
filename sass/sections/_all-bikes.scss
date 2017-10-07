@@ -37,3 +37,29 @@
   border-color: $all-bikes__btn__color;
   margin: 0 6px 3px 3px;
 }
+
+@media screen and (max-width: 768px) {
+  .bestsellers__form {
+    text-align: center;
+    line-height: 50px;
+    margin-top: -35px;
+  }
+
+  .bestsellers__form--all {
+    margin-top: 15px;
+  }
+
+  .bestseller__search {
+    margin-right: 0;
+    width: 65%;
+  }
+
+  .bestsellers__select {
+    width: 70%;
+  }
+
+  label::before {
+    content: "\A";
+    white-space: pre;
+  }
+}

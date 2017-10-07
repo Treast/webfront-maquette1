@@ -2,7 +2,7 @@ export default class BikeTemplate {
     static render(data) {
         let html = `
             <li class="bestsellers-list__li" data-price="${data.price}" data-name="${data.title}" ${"stock" in data ? "data-stock=\"" + data.stock + "\"" : null} ${"popularity" in data ? "data-popularity=\"" + data.popularity + "\"" : null}>
-                <article class="bestseller ${data.stock < 3 ? "bestseller--danger" : null}">
+                <article class="bestseller ${data.stock < 3 ? "bestseller--danger" : ''}">
                     <a href="#">
                         <div class="bestseller__image">
                             <img src="${data.image}" alt="Image de vélo">

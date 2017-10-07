@@ -638,9 +638,9 @@ header {
   padding-right: 5px; }
 
 .bestsellers__select {
-  background: url(../img/arrows.png) no-repeat;
+  background: url(../img/arrows2.png) no-repeat;
   padding: 6px 32px 8px 8px;
-  background-position: 96px center;
+  background-position: right center;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -661,7 +661,6 @@ header {
 
 .bestsellers-list__li {
   width: 180px;
-  flex: 1;
   margin-right: 6px; }
   .bestsellers-list__li:last-child {
     margin-right: 0; }
@@ -715,6 +714,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .bestsellers__header {
+    display: block;
     padding: 0 20px; }
   .bestsellers-list {
     flex-direction: column; }
@@ -872,7 +872,9 @@ header {
   .new-bikes__flex {
     display: block; }
   .new-bikes__bike--hidden {
-    display: block !important; }
+    display: block !important;
+    position: static;
+    transform: none; }
   .bike__image {
     margin: 30px 0 0; }
   .bike__image img {
@@ -1139,7 +1141,7 @@ header {
     position: absolute;
     content: '';
     display: block;
-    margin-top: 0px;
+    margin-top: -1px;
     border-style: solid;
     border-width: 0 0 53px 100vw;
     border-color: transparent #ff3f0c #ff3f0c transparent;
@@ -1173,9 +1175,9 @@ header {
 .charts__select {
   color: #ffffff;
   border-color: #ffffff;
-  background: url(../img/arrows-white.png) no-repeat;
+  background: url(../img/arrows-white2.png) no-repeat;
   padding: 6px 32px 8px 8px;
-  background-position: 104px center;
+  background-position: right center;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -1208,6 +1210,25 @@ header {
   padding-left: 20px;
   padding-right: 52px;
   padding-top: 37px; }
+
+@media screen and (max-width: 768px) {
+  .charts__header {
+    display: block; }
+  .chart__chart {
+    width: 90%;
+    height: 100%; }
+  .charts__arrow-previous {
+    display: none; }
+  .charts__form {
+    margin-top: -40px;
+    line-height: 50px;
+    text-align: right; }
+  .charts__select {
+    width: 70%; }
+    .charts__select:nth-of-type(1) {
+      margin-right: -4px; }
+  .charts__label--color {
+    margin-left: 0; } }
 
 .all-bikes {
   margin-top: 39px; }
@@ -1243,6 +1264,22 @@ header {
   border-color: #555555;
   margin: 0 6px 3px 3px; }
 
+@media screen and (max-width: 768px) {
+  .bestsellers__form {
+    text-align: center;
+    line-height: 50px;
+    margin-top: -35px; }
+  .bestsellers__form--all {
+    margin-top: 15px; }
+  .bestseller__search {
+    margin-right: 0;
+    width: 65%; }
+  .bestsellers__select {
+    width: 70%; }
+  label::before {
+    content: "\A";
+    white-space: pre; } }
+
 footer {
   background-color: #170cff;
   color: #ffffff;
@@ -1273,3 +1310,10 @@ footer a {
 
 .footer__li {
   padding-bottom: 4px; }
+
+@media screen and (max-width: 768px) {
+  .container--footer {
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .footer-list {
+    flex: 0 1 34%; } }

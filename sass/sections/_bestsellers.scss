@@ -21,9 +21,9 @@
 }
 
 .bestsellers__select {
-  background: url(../img/arrows.png) no-repeat;
+  background: url(../img/arrows2.png) no-repeat;
   padding: 6px 32px 8px 8px;
-  background-position: 96px center;
+  background-position: right center;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -46,7 +46,7 @@
 
 .bestsellers-list__li {
   width: $bestsellers-list__li;
-  flex: 1;
+  //flex: 1;
   margin-right: 6px;
 
   &:last-child {
@@ -113,6 +113,7 @@
 
 @media screen and (max-width: 768px) {
   .bestsellers__header {
+    display: block;
     padding: 0 20px;
   }
 

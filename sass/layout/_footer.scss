@@ -37,3 +37,14 @@ footer a {
 .footer__li {
   padding-bottom: 4px;
 }
+
+@media screen and (max-width: 768px) {
+  .container--footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-list {
+    flex: 0 1 34%
+  }
+}
