@@ -88,6 +88,11 @@
   padding-top: 37px;
 }
 
+.chart__canvas {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .charts__header {
     display: block;

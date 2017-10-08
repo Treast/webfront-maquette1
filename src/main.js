@@ -1,11 +1,15 @@
 import Slider from './slider/slider';
 import Sort from './sort/sort';
+import Chart from './chart/chart';
 
-var slider = new Slider(document.querySelector('.new-bikes__container'));
+let slider = new Slider(document.querySelector('.new-bikes__container'));
 slider.loadContent();
 
-var sort1 = new Sort(document.querySelector('section.bestsellers'));
+let sort1 = new Sort(document.querySelector('section.bestsellers'));
 sort1.loadContent('./api/bestsellers.json');
 
-var sort2 = new Sort(document.querySelector('section.all-bikes'));
+let sort2 = new Sort(document.querySelector('section.all-bikes'));
 sort2.loadContent('./api/all-modeles.json');
+
+let chart = new Chart(document.querySelector('section.charts canvas'));
+chart.render();
