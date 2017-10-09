@@ -415,6 +415,16 @@ li {
 section {
   flex: 1; }
 
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: #34495e; }
+
 .btn {
   transition: border 0.2s ease-in-out, margin 0.2s ease-in-out; }
 
@@ -477,6 +487,9 @@ header {
   color: #ffffff;
   flex: 1;
   border-bottom: 1px solid #ffffff; }
+
+.header__responsive {
+  display: none; }
 
 .header__container {
   display: flex;
@@ -552,8 +565,16 @@ header {
 @media screen and (max-width: 768px) {
   .header__container {
     display: block; }
-  nav {
-    width: 100%; }
+  .header__navs {
+    background-color: #170cff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(-100%, 0, 0);
+    width: 70%;
+    z-index: 100; }
   .nav-primary, .nav-secondary {
     display: block;
     height: auto;
@@ -573,7 +594,22 @@ header {
       background-color: #ffffff;
       opacity: 1;
       margin-top: -3px;
-      transition: transform 0.4s ease-in-out; } }
+      transition: transform 0.4s ease-in-out; }
+  .header__responsive {
+    display: flex;
+    padding: 5px 15px;
+    justify-content: space-between; }
+  .header__title {
+    font-size: 16px;
+    flex: 1; }
+  .header__image {
+    flex: 1;
+    margin-top: 5px;
+    text-align: right; }
+  .header__burger {
+    height: 30px;
+    width: 30px;
+    cursor: pointer; } }
 
 .new-product {
   background-color: #170cff;
@@ -1136,7 +1172,8 @@ header {
 .charts {
   margin-top: 65px;
   background-color: #ff3f0c;
-  color: #ffffff; }
+  color: #ffffff;
+  position: relative; }
   .charts:after {
     position: absolute;
     content: '';
@@ -1145,7 +1182,9 @@ header {
     border-style: solid;
     border-width: 0 0 53px 100vw;
     border-color: transparent #ff3f0c #ff3f0c transparent;
-    transform: rotate3d(1, 0, 0, 180deg); }
+    transform: rotate3d(1, 0, 0, 180deg);
+    z-index: 10;
+    bottom: -52px; }
 
 .charts__header {
   display: flex; }
@@ -1188,6 +1227,9 @@ header {
   width: 122px;
   box-shadow: 1px 1px 5px 0px #d9360a; }
 
+.charts__select option {
+  background-color: #ff3f0c; }
+
 .charts__chart {
   display: flex;
   margin-bottom: 11px; }
@@ -1218,7 +1260,7 @@ header {
 @media screen and (max-width: 768px) {
   .charts__header {
     display: block; }
-  .chart__chart {
+  .chart__canvas {
     width: 90%;
     height: 100%; }
   .charts__arrow-previous {

@@ -6,6 +6,10 @@ header {
 	border-bottom: 1px solid $header__border-color;
 }
 
+.header__responsive {
+	display: none;
+}
+
 .header__container {
 	display: flex;
 	justify-content: space-between;
@@ -98,8 +102,16 @@ header {
 		display: block;
 	}
 
-	nav {
-		width: 100%;
+	.header__navs {
+		background-color: $header__background;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: translate3d(-100%, 0, 0);
+		width: 70%;
+		z-index: 100;
 	}
 
 	.nav-primary, .nav-secondary {
@@ -128,6 +140,28 @@ header {
 			margin-top: -3px;
 			transition: transform 0.4s ease-in-out;
 		}
+	}
+	.header__responsive {
+		display: flex;
+		padding: 5px 15px;
+		justify-content: space-between;
+	}
+
+	.header__title {
+		font-size: 16px;
+		flex: 1;
+	}
+
+	.header__image {
+		flex: 1;
+		margin-top: 5px;
+		text-align: right;
+	}
+
+	.header__burger {
+		height: 30px;
+		width: 30px;
+		cursor: pointer;
 	}
 
 }
