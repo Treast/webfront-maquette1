@@ -2,6 +2,7 @@
   margin-top: 65px;
   background-color: $chart__background;
   color: $chart__color;
+  position: relative;
   &:after {
     position: absolute;
     content: '';
@@ -11,6 +12,8 @@
     border-width: 0 0 53px 100vw;
     border-color: transparent $chart__background $chart__background transparent;
     transform: rotate3d(1, 0, 0, 180deg);
+    z-index: 10;
+    bottom: -52px;
   }
 }
 

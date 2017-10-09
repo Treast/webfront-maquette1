@@ -87,7 +87,7 @@
   border-color: #000000;
   margin: 0 0 3px 45px;
 }
-
+ 
 .new-bikes__arrows {
   flex: 1;
   cursor: pointer;
@@ -127,7 +127,7 @@
 
 .preview__image {
   height: $preview__height;
-  width: $preview__width;
+  width: $preview__width; 
   border-radius: 50%;
   border: 1px solid $preview__border-color;
   transition: height 0.3s ease-out, width 0.3s ease-out, border-color 0.3s ease-out;

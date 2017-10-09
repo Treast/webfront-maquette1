@@ -15,8 +15,8 @@ export default class Bike {
 
     move(e) {
         TweenMax.to(this.el, 0.4, {
-            scaleX: 1.15,
-            scaleY: 1.15
+            scaleX: 1.05,
+            scaleY: 1.05
         });
     }
 
