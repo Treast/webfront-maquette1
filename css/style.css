@@ -392,10 +392,16 @@ template {
 html, body {
   font-family: "Arial"; }
 
+html {
+  height: 100%; }
+
 body, main {
   display: flex;
   flex-direction: column;
   overflow-x: hidden; }
+
+main {
+  overflow: hidden; }
 
 * {
   text-rendering: optimizeLegibility;
@@ -491,7 +497,7 @@ header {
 .header__responsive {
   display: none; }
 
-.header__container {
+.header__navs {
   display: flex;
   justify-content: space-between; }
 
@@ -1294,7 +1300,8 @@ header {
 
 .all-bikes__legend {
   text-align: center;
-  padding-top: 2px; }
+  padding-top: 2px;
+  padding-bottom: 30px; }
 
 .all-bikes__legend--btn {
   display: inline-block;
@@ -1330,7 +1337,7 @@ header {
 footer {
   background-color: #170cff;
   color: #ffffff;
-  margin-top: 100px; }
+  margin-top: 70px; }
 
 footer a {
   opacity: 0.6;
