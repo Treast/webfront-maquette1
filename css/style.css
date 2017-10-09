@@ -572,6 +572,7 @@ header {
   .header__container {
     display: block; }
   .header__navs {
+    display: block;
     background-color: #170cff;
     position: absolute;
     top: 0;

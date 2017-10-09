@@ -103,6 +103,7 @@ header {
 	}
 
 	.header__navs {
+		display: block;
 		background-color: $header__background;
 		position: absolute;
 		top: 0;
