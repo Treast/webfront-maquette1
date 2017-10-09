@@ -62,6 +62,10 @@
   box-shadow: 1px 1px 5px 0px $chart__box-shadow;
 }
 
+.charts__select option {
+  background-color: $chart__background;
+}
+
 .charts__chart {
   display: flex;
   margin-bottom: 11px;
