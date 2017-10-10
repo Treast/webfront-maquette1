@@ -69,19 +69,51 @@ export default class Sort {
             return a.getAttribute(sorter) > b.getAttribute(sorter) ? 1 : -1;
         });
 
-        TweenMax.to(list, 0.5, {
-            alpha: 0,
+        let sequence = new TimelineMax();
+
+        sequence.fromTo(bikes, 0.2, {
+            rotationY: 0,
+            transformStyle: "preserve-3d"
+        },{
+            rotationY: 90,
+            z: 100,
             onComplete: () => {
                 list.innerHTML = null;
 
                 bikes.forEach((element) => {
                     list.appendChild(element);
                 });
+            }
+        });
 
-                TweenMax.to(list, 0.5, {
-                    alpha: 1
+        sequence.fromTo(bikes, 0.2, {
+            rotationY: 270,
+            z: 100
+        }, {
+            rotationY: 360,
+            z: 0,
+            onComplete: () => {
+                bikes.forEach(element => {
+                    element.style.transform = null;
                 });
             }
         });
+
+        sequence.play();
+
+        // TweenMax.to(list, 0.5, {
+        //     alpha: 0,
+        //     onComplete: () => {
+        //         list.innerHTML = null;
+        //
+        //         bikes.forEach((element) => {
+        //             list.appendChild(element);
+        //         });
+        //
+        //         TweenMax.to(list, 0.5, {
+        //             alpha: 1
+        //         });
+        //     }
+        // });
     }
 }

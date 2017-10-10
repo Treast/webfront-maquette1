@@ -700,7 +700,8 @@ header {
   list-style: none;
   justify-content: flex-start;
   padding: 0 !important;
-  margin-top: 42px; }
+  margin-top: 42px;
+  perspective: 2000px; }
 
 .bestsellers-list__li {
   width: 180px;
