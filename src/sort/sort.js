@@ -41,9 +41,32 @@ export default class Sort {
 
     searchChanged() {
         let list = this.el.querySelector('ul.bestsellers-list');
+        let bikes = [].slice.call(this.el.querySelectorAll('.bestsellers-list__li'));
 
-        TweenMax.to(list, 0.5, {
-            alpha: 0,
+        // TweenMax.to(list, 0.5, {
+        //     alpha: 0,
+        //     onComplete: () => {
+        //         list.innerHTML = null;
+        //
+        //         this.bikes.forEach((element) => {
+        //             if(element.el.innerHTML.toLowerCase().indexOf(this.searchInput.value.toLowerCase()) > -1)
+        //                 list.appendChild(element.el);
+        //         });
+        //
+        //         TweenMax.to(list, 0.5, {
+        //             alpha: 1
+        //         });
+        //     }
+        // });
+
+        let sequence = new TimelineMax();
+
+        sequence.fromTo(bikes, 0.2, {
+            rotationY: 0,
+            transformStyle: "preserve-3d"
+        },{
+            rotationY: 90,
+            z: 100,
             onComplete: () => {
                 list.innerHTML = null;
 
@@ -51,12 +74,22 @@ export default class Sort {
                     if(element.el.innerHTML.toLowerCase().indexOf(this.searchInput.value.toLowerCase()) > -1)
                         list.appendChild(element.el);
                 });
+            }
+        });
 
-                TweenMax.to(list, 0.5, {
-                    alpha: 1
+        sequence.fromTo(bikes, 0.2, {
+            rotationY: 270,
+            z: 100
+        }, {
+            rotationY: 360,
+            z: 0,
+            onComplete: () => {
+                bikes.forEach(element => {
+                    element.style.transform = null;
                 });
             }
         });
+        sequence.play();
     }
 
     selectChanged() {
@@ -86,6 +119,7 @@ export default class Sort {
             }
         });
 
+
         sequence.fromTo(bikes, 0.2, {
             rotationY: 270,
             z: 100
@@ -100,20 +134,5 @@ export default class Sort {
         });
 
         sequence.play();
-
-        // TweenMax.to(list, 0.5, {
-        //     alpha: 0,
-        //     onComplete: () => {
-        //         list.innerHTML = null;
-        //
-        //         bikes.forEach((element) => {
-        //             list.appendChild(element);
-        //         });
-        //
-        //         TweenMax.to(list, 0.5, {
-        //             alpha: 1
-        //         });
-        //     }
-        // });
     }
 }

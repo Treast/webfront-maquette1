@@ -110,11 +110,12 @@ header {
 		left: 0;
 		right: 0;
 		bottom: 0;
+		padding-top: 20px;
 		transform: translate3d(-100%, 0, 0);
 		width: 70%;
 		z-index: 100;
 	}
-
+ 
 	.nav-primary, .nav-secondary {
 		display: block;
 		height: auto;
@@ -124,22 +125,18 @@ header {
 	.nav-primary__li, .nav-secondary__li {
 		display: block;
 		width: 100%;
-		text-align: center;
+		text-align: left;
+		padding-left: 40px;
 	}
 
 	.nav-primary__link, .nav-secondary__link {
 		display: block;
 		padding: 0;
+		opacity: 1;
 
 		&:after {
 			content: '';
-			display: block;
-			height: 1px;
-			width: 100%;
-			background-color: #ffffff;
-			opacity: 1;
-			margin-top: -3px;
-			transition: transform 0.4s ease-in-out;
+			display: none;
 		}
 	}
 	.header__responsive {

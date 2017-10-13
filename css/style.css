@@ -579,6 +579,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
+    padding-top: 20px;
     transform: translate3d(-100%, 0, 0);
     width: 70%;
     z-index: 100; }
@@ -589,19 +590,15 @@ header {
   .nav-primary__li, .nav-secondary__li {
     display: block;
     width: 100%;
-    text-align: center; }
+    text-align: left;
+    padding-left: 40px; }
   .nav-primary__link, .nav-secondary__link {
     display: block;
-    padding: 0; }
+    padding: 0;
+    opacity: 1; }
     .nav-primary__link:after, .nav-secondary__link:after {
       content: '';
-      display: block;
-      height: 1px;
-      width: 100%;
-      background-color: #ffffff;
-      opacity: 1;
-      margin-top: -3px;
-      transition: transform 0.4s ease-in-out; }
+      display: none; }
   .header__responsive {
     display: flex;
     padding: 5px 15px;
