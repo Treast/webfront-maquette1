@@ -9,7 +9,7 @@
 > With **NPM**
 ```npm start```
 
-> With **Gulp**
+> With **Gulp** (if ```gulp-cli``` is installed globally)
 ```gulp```
 
 # Things done
